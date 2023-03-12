@@ -21,19 +21,6 @@ from pyats.topology.loader import load
 # Use argparse to determine the testbed file:
 # https://docs.python.org/3/library/argparse.html
 
-def lookup_aci_info(aci_address, aci_username, aci_password):
-    """
-    Use REST API for ACI to lookup and return details
-    In case of an error, return False.
-    """
-
-    # Authenticate to API
-    # Send API Request(s) for information
-    # Compile and return information
-
-    return False
-
-
 parser = argparse.ArgumentParser(description='Generate network inventory report from testbed')
 parser.add_argument('testbed', type=str, help='pyATS Testbed File')
 parser.add_argument('--aci-address', type=str, help='Cisco ACI Controller address for gathering inventory details')
@@ -58,20 +45,7 @@ if args.sdwan_address:
     sdwan_password = getpass(f"What is the password for {args.sdwan_address}? (input will be hidden)")
     print()
 
-# Gathering info on inventory from ACI and SD-WAN
-if args.aci_address:
-    print(f"Inventory details will be pulled from Cisco APIC {args.aci_address}")
-    aci_info = lookup_aci_info(args.aci_address, aci_username, aci_password)
-    
-    # for debug, print results
-    print(aci_info)
-
-if args.sdwan_address:
-    print(f"Inventory details will be pulled from Cisco APIC {args.sdwan_address}")
-    sdwan_info = lookup_aci_info(args.sdwan_address, sdwan_username, sdwan_password)
-    
-    # for debug, print results
-    print(sdwan_info)
+# 
 
 
 
