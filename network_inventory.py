@@ -4,6 +4,7 @@ import argparse
 from getpass import getpass
 from pyats.topology.loader import load
 from urllib3 import disable_warnings, exceptions
+import requests
 
 disable_warnings(exceptions.InsecureRequestWarning)
 
@@ -30,8 +31,8 @@ def auth_aci(aci_address, aci_username, aci_password):
     url = f"https://{aci_address}/api/aaaLogin.json"
 
     # The data payload for authentication
-    payload = {"aaaUser": {"attributes":{"name": aci_username,
-                                         "pwd": aci_password}}} 
+    payload = {"aaaUser": {"attributes":{"name": aci_username, 
+                                        "pwd": aci_password}}} 
     # Send the request to the controller
     try:
         response = requests.post(url, json=payload, verify=False)
