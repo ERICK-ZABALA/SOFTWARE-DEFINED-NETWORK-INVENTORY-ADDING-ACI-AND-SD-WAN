@@ -1,5 +1,5 @@
-#!/home/codespace/.python/current/bin/python3
-import requests
+#!/home/devnet/Documents/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/sdn/bin/python
+
 import argparse
 from getpass import getpass
 from pyats.topology.loader import load
