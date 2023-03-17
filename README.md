@@ -8,6 +8,9 @@ Network Automation is becoming increasingly important for managing and maintaini
 
 In this project, we'll be exploring the powerful CLI library in Cisco Switch Nexus 9000 NX-OS and leveraging it to build a troubleshooting assistant that can automate the process of capturing logs and storing them in the bootflash. By the end of this project, you'll have a better understanding of how to use EEM, CLI libraries, and automation to streamline your network operations and troubleshoot issues faster. 
 
+In order to generarte a report for SD-WAN AND ACI as initial point is necesary respond this questions:
+
++ 
 + Click to Machine Logo to check the video!!! 
 
 + How can we know the status changed?
