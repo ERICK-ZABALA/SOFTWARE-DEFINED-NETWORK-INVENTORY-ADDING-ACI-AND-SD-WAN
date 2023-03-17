@@ -6,34 +6,27 @@ Network Automation is becoming increasingly important for managing and maintaini
 
 ![image](https://user-images.githubusercontent.com/38144008/225774372-8e471382-1618-4de3-8496-5065fc0a6dc4.png)
 
-In this project, we'll be exploring the powerful CLI library in Cisco Switch Nexus 9000 NX-OS and leveraging it to build a troubleshooting assistant that can automate the process of capturing logs and storing them in the bootflash. By the end of this project, you'll have a better understanding of how to use EEM, CLI libraries, and automation to streamline your network operations and troubleshoot issues faster. 
-
 In order to generarte a report for SD-WAN AND ACI as initial point is necesary respond this questions:
 
-+ 
+ 
 + Click to Machine Logo to check the video!!! 
 
-+ How can we know the status changed?
-  Syslog
-+ Where run the command?
-  Onbox Nexus 9000
-+ How to send the command to nexus 9000?
-  Using Cli library of Python
-+ Where we are going to save the information?
-  Bootflash
-+ How to xtract the information allocated in the Nexus
-  Using SCP
++ How can we talk to the controllers?
++ What API are available to retrieve the information?
++ How can we explore and test the APIs?
++ How can we use those APIs in Python?
++ How do we add this feature to the inventory script?
 
 
-* Library to interact: Cli, scp
+* Library to interact: requests, pyATS
 
 |Topics|Description|Title|Notes|
 |---|---|---|---|
 | INSTALL PYTHON AND DEPENDENCIES | Install Python 3.10.2.  | [INSTALL PYTHON AND DEPENDENCIES](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/INSTALL_PYTHON_AND_DEPENDENCIES.md) | In this first step you install your Python. |
 | INSTALL ANYCONNECT VPN CLIENT | Install VPN Client via CLI  | [INSTALL ANYCONNECT VPN CLIENT](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/INSTALL%20_VPN_CLIENT_ANYCONNECT.md) | In this second step you are going to install your vpn anyconnect client. |
 | INSTALL GIT | Install GIT via CLI | [INSTALL GIT](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/INSTALL_GIT.md) | In this step you install git in your environment. |
-| SCRIPT ASSISTANT | Script Assistant onbox in Nexus 9000 | [SCRIPT ASSISTANT ONBOX](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/SCRIPT_ASSISTANT.md) | In this step you are going to create the code to capture information if exist an event. |
-| SCRIPT TO EXTRACT FOLDER | Script files using scp in Python | [EXTRACT NEXUS 9000 FILES](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/SCRIPT_SCP.md) | In this step you are going to dowload the files captured previously via Python. |
+| SCRIPT INVENTORY ACI & SD-WAN | Script Assistant onbox in Nexus 9000 | [SCRIPT ASSISTANT ONBOX](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/SCRIPT_INVENTORY_ACI_&_SD-WAN.md) | In this step you are going to create the code to capture information if exist an event. |
+| SCRIPT TO CREATE A CSV FILE | Script files using scp in Python | [EXTRACT NEXUS 9000 FILES](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/SCRIPT_SCP.md) | In this step you are going to dowload the files captured previously via Python. |
 
 # REFERENCES
 
