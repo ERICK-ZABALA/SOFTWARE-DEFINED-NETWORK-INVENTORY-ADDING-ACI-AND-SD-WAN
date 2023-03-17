@@ -198,6 +198,18 @@ Everything up-to-date
 
 ```
 
+# CRATEA A NEW BRANCH GIT
+
++ Using this command you can create a new branch in your repository.
+
+(inventory) [opc@jenkins-master AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON]$ git checkout -b sdn-inventory
+
++ Display all branch in the repository
+
+(inventory) [opc@jenkins-master AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON]$ git branch -v
+
+
+
 # REFERENCES
 
 + [Devnet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/43964e62-a13c-4929-bde7-a2f68ad6b27c?diagramType=Topology) to test owner Inventory
