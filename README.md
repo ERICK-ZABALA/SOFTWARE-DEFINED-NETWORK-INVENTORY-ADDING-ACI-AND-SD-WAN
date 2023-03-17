@@ -1,5 +1,5 @@
 # [![image](https://user-images.githubusercontent.com/38144008/225514767-010fa633-9c2e-410a-9734-4fce1372d125.png)](https://youtu.be/N51iZO8GDCc)
-
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/ERICK-ZABALA/AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON) [![Run in Cisco Cloud IDE](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-runable-icon.svg)](https://developer.cisco.com/devenv/?id=devenv-vscode-base&GITHUB_SOURCE_REPO=https://github.com/ERICK-ZABALA/AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON)
 # SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN
 
 Software defined network ACI & SD-WAN inventory with Python work over requests library to simplify and accelerate the process of collecting and organizing information about network devices. By leveraging the power of Python programming, network administrators can create customized scripts that automate the collection of device data, enabling them to quickly and accurately generate an inventory of all devices on their network. In this scenario we are going to work with sandbox ACI and SD-WAN. 
