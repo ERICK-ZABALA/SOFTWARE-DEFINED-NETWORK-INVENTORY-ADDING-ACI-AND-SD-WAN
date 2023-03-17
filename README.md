@@ -12,11 +12,14 @@ In order to generarte a report for SD-WAN AND ACI as initial point is necesary r
 + Click to Machine Logo to check the video!!! 
 
 + How can we talk to the controllers?
+We are going to use REST API
 + What API are available to retrieve the information?
 + How can we explore and test the APIs?
+ACI Inspector and Postman
 + How can we use those APIs in Python?
+We are going to work with the library requests
 + How do we add this feature to the inventory script?
-
+Create a New Script for ACI / SD_WAN
 
 * Library to interact: requests, pyATS
 
