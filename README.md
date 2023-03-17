@@ -22,9 +22,9 @@ In order to generarte a report for SD-WAN AND ACI as initial point is necesary r
 
 |Topics|Description|Title|Notes|
 |---|---|---|---|
-| INSTALL PYTHON AND DEPENDENCIES | Install Python 3.10.2.  | [INSTALL PYTHON AND DEPENDENCIES](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/INSTALL_PYTHON_AND_DEPENDENCIES.md) | In this first step you install your Python. |
-| INSTALL ANYCONNECT VPN CLIENT | Install VPN Client via CLI  | [INSTALL ANYCONNECT VPN CLIENT](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/INSTALL%20_VPN_CLIENT_ANYCONNECT.md) | In this second step you are going to install your vpn anyconnect client. |
-| INSTALL GIT | Install GIT via CLI | [INSTALL GIT](https://github.com/ERICK-ZABALA/BUILDING-A-TROUBLESHOOTING-ASSISTANT/blob/main/Readme/INSTALL_GIT.md) | In this step you install git in your environment. |
+| INSTALL PYTHON AND DEPENDENCIES | Install Python 3.10.2.  | [INSTALL PYTHON AND DEPENDENCIES](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/INSTALL_PYTHON_AND_DEPENDENCIES.md) | In this first step you install your Python. |
+| INSTALL ANYCONNECT VPN CLIENT | Install VPN Client via CLI  | [INSTALL ANYCONNECT VPN CLIENT](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/INSTALL_ANYCONNECT_VPN_CLIENT.md) | In this second step you are going to install your vpn anyconnect client. |
+| INSTALL GIT | Install GIT via CLI | [INSTALL GIT](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/INSTALL_GIT.md) | In this step you install git in your environment. |
 | SCRIPT INVENTORY ACI & SD-WAN | Script to collect inventory for ACI and SD-WAN | [SCRIPT INVENTORY ACI & SD-WAN](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/SCRIPT_INVENTORY_ACI_%26_SD-WAN.md) | In this section you are going to generate the inventory using python. |
 | SCRIPT TO CREATE A CSV FILE | Script to generate a CSV File | [SCRIPT TO CREATE A CSV FILE](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/SCRIPT_TO_CREATE_A_CSV_FILE.md) | In this step you are going to dowload the files captured previously via Python. |
 
