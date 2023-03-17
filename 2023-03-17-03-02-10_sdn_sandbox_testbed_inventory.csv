@@ -1,0 +1,12 @@
+device_name,device_os,software_version,uptime,serial_number
+leaf-2,apic-N9K-C9396PX,simsw-5.2(1g),"00 days, 05 hours, 33 mins",TEP-1-102
+leaf-1,apic-N9K-C9396PX,simsw-5.2(1g),"00 days, 05 hours, 33 mins",TEP-1-101
+spine-1,apic-N9K-C9508,simsw-5.2(1g),"00 days, 05 hours, 33 mins",TEP-1-103
+apic1,apic-,Unknown,"00 days, 05 hours, 33 mins",TEP-1-1
+vmanage,sdwan-vmanage,20.4.2.1,"0 days, 15 hours, 1 minutes",B1CA91AE45B8194D
+vsmart,sdwan-vsmart,20.4.2,"251 days, 19 hours, 39 minutes",B1CA91AE45B81950
+vbond,sdwan-vedge-cloud,20.4.2,"254 days, 19 hours, 8 minutes",B1CA91AE45B8194F
+dc-cedge01,sdwan-vedge-CSR-1000v,16.12.3.0.3752,"254 days, 21 hours, 3 minutes",No certificate installed
+site1-cedge01,sdwan-vedge-CSR-1000v,16.12.3.0.3752,"254 days, 21 hours, 2 minutes",No certificate installed
+site2-cedge01,sdwan-vedge-CSR-1000v,16.12.3.0.3752,"254 days, 21 hours, 2 minutes",No certificate installed
+site3-vedge01,sdwan-vedge-cloud,20.4.2,"248 days, 20 hours, 3 minutes",84B83C92
