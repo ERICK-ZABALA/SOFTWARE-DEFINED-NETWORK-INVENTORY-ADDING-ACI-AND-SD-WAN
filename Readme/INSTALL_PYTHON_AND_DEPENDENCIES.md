@@ -168,6 +168,9 @@ dist-sw01(config)# dir
 ```
 
 # REFERENCES
-+ [Switches Nexus Supported](https://developer.cisco.com/site/python/) python onbox.
-+ [Devnet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/43964e62-a13c-4929-bde7-a2f68ad6b27c?diagramType=Topology) to test your Nexus9000.
-+ [JSON](https://jsonlint.com/) to test format.
+
+* Download in your machine [Summer 2021 Devasc-Prep-Network-Inventory-02](https://github.com/hpreston/summer2021-devasc-prep-network-inventory-02.git) maked by Hank Preston, that is a guide if you need help to develop all the code related how to make an inventory.
+* [Devnet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/43964e62-a13c-4929-bde7-a2f68ad6b27c?diagramType=Topology) to test owner Inventory
+* Reserve your Sandboc ACI Simulator [here!](https://devnetsandbox.cisco.com/RM/Diagram/Index/390f2dc1-7ca7-44e8-bd7e-f32c0f146ef1)
+* [SD-WAN](https://sandboxdnac2.cisco.com/) Online Always Active
+* [JSON](https://jsonlint.com/) to test format
