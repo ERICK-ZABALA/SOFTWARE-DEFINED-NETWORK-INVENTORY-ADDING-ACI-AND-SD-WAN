@@ -26,6 +26,21 @@ Check this parameters: Up Time and Firmware.
 
 # POSTMAN ANALYSING 
 
+Sending first Post to receive a token.
+
+![image](https://user-images.githubusercontent.com/38144008/225829950-7593f130-564c-4cb0-aaa2-b727d1cd600e.png)
+
+The token is used in the APIC-Cokkie 
+
+![image](https://user-images.githubusercontent.com/38144008/225841779-4d0cb210-ec7e-405f-9964-880c9943ee1c.png)
+
+![image](https://user-images.githubusercontent.com/38144008/225841939-8e30807c-eca3-4988-89b3-1d28ace8df96.png)
+
+![image](https://user-images.githubusercontent.com/38144008/225844156-76ab34c2-77d9-40e1-beb4-15e741ed5b79.png)
+
+
+
+
 
 
 
