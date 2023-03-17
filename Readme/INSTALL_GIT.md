@@ -202,11 +202,11 @@ Everything up-to-date
 
 + Using this command you can create a new branch in your repository.
 
-(inventory) [opc@jenkins-master AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON]$ git checkout -b sdn-inventory
+```(inventory) [opc@jenkins-master AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON]$ git checkout -b sdn-inventory```
 
 + Display all branch in the repository
 
-(inventory) [opc@jenkins-master AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON]$ git branch -v
+```(inventory) [opc@jenkins-master AUTOMATING-A-NETWORK-INVENTORY-WITH-PYTHON]$ git branch -v```
 
 
 
