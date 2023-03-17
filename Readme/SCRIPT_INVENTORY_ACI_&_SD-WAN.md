@@ -1,8 +1,11 @@
 # SCRIPT INVENTORY ACI & SD-WAN
 
-In this section we need to reserve our sandboc for  ACI Simulator Sandbox V5 in the portal of cisco. [Free](https://devnetsandbox.cisco.com/RM/Topology)
+In this section we need to reserve our sandboc for ACI Simulator Sandbox V5 in the portal of cisco. [Free](https://devnetsandbox.cisco.com/RM/Topology)
 
 ![image](https://user-images.githubusercontent.com/38144008/225805891-07075d98-db4e-43f9-b674-64d19be34a9d.png)
+
+![image](https://user-images.githubusercontent.com/38144008/225861962-67e7d1db-04cb-47bf-a533-32d07928518e.png)
+
 
 # CISCO Inspector ACI
 
@@ -42,20 +45,115 @@ The token is used in the APIC-Cokkie
 
 # SD-WAN
 
+![image](https://user-images.githubusercontent.com/38144008/225862214-72fdce0a-ea7e-4c7f-be43-7e6a67cc611f.png)
+
 We need to review the documentation that offer cisco https://developer.cisco.com/docs/sdwan/#!authentication/how-to-authenticate
 
-SD-WAN = https://sandbox-sdwan-2.cisco.com
-username: devnetuser
-password: RG!_Yw919_83
++ SD-WAN = https://sandbox-sdwan-2.cisco.com
++ Username: devnetuser
++ Password: RG!_Yw919_83
 
 ![image](https://user-images.githubusercontent.com/38144008/225851493-d36d66c1-b8d3-4b13-a106-5b495b5d9977.png)
 
 ![image](https://user-images.githubusercontent.com/38144008/225851969-4acdf722-7d1b-416f-9663-4b6adf6e0c8d.png)
 
+![image](https://user-images.githubusercontent.com/38144008/225853688-d580abd0-610d-4cd1-b594-e1e46fee6af0.png)
+
+![image](https://user-images.githubusercontent.com/38144008/225854037-3acc57a2-8166-4ef4-923d-07483279788e.png)
+
+# AUTHENTICATION WITH PYTHON ACI
+ 
+ Authentication for Aci in python using the postman flow.
+ 
+ ```python
+ def auth_aci(aci_address, aci_username, aci_password):
+    """Retrieve Authentication Token from ACI Controller"""
+    # The API Endpoint for authentication
+    url = f"https://{aci_address}/api/aaaLogin.json"
+
+    # The data payload for authentication
+
+    payload = {
+        "aaaUser": {
+            "attributes":{
+                "name": aci_username,
+                "pwd": aci_password}
+                }
+            } 
+    header = {
+      "Content-Type" : "application/json"
+   }
+    # Send the request to the controller
+    try:
+        response = requests.post(url, headers=header, json=payload, verify=False)
+        # If the request succeeded, return the token
+        if response.status_code == 200:
+            return response.json()["imdata"][0]["aaaLogin"]["attributes"]["token"]
+        else:
+            return False
+    
+    except Exception as e:
+        print(" Error: Unable to authentication to APIC")
+        print(e)
+        return False
+ ```
 
 
 
+# AUTHENTICATION WITH PYTHON ACI
+ 
+```python
 
+def auth_sdwan(sdwan_address, sdwan_username, sdwan_password):
+    #The API Endpoint for authentication
+    url = f"https://{sdwan_address}/j_security_check"
+    # The data payload for authentication
+    payload = {"j_username":sdwan_username,
+               "j_password":sdwan_password }
+    headers = {"Content-Type":"application/x-www-form-urlencoded"}
+
+    try:
+        response = requests.post(url, data=payload, headers=headers, verify=False)
+        if response.status_code == 200 and "JSESSIONID" in response.cookies:
+            return response.cookies["JSESSIONID"]
+        else:
+            return False
+    except Exception as e:
+        print("Error: Unable to authentication to SDWAN")
+        print(e)
+        return False
+        
+def logout_sdwan(sdwan_address, token):
+    """
+    Logout of SD-WAN API
+    """
+    # The API Endpoints for authentication
+    url = f"https://{sdwan_address}/logout?nocache=15"
+    # Auth Cookie
+    cookies = {"JSESSIONID": token}
+
+    # Send the request to the controller
+
+    try:
+        response = requests.get(url, cookies=cookies, verify=False)
+        # Test logout
+        if response.status_code == 200:
+            return True
+        else:
+            return False
+    except Exception as e:
+        print(" Error: unable to logout from SD-WAN")
+        print(e)
+        return False
+
+
+```
+
+Use the command `./network_inventory.py sdn_sandbox_testbed.yaml --aci-address 10.10.20.14 --sdwan-address sandbox-sdwan-2.cisco.com` to run all the solution.
+
+* Where the final result is a file csv with all detail ACI and SD-WAN devices.
+
+![image](https://user-images.githubusercontent.com/38144008/225861781-c0c9ccfc-dae3-4a64-9e13-fbbec852c441.png)
 
 
 
