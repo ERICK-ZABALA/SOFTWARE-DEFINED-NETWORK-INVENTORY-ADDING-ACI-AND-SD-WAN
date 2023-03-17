@@ -99,11 +99,15 @@ We need to review the documentation that offer cisco https://developer.cisco.com
         print(e)
         return False
  ```
-
-
+ 
+ ![image](https://user-images.githubusercontent.com/38144008/225874534-c4b4c70e-ecc9-4321-8247-7060ef1b6eb8.png)
 
 # AUTHENTICATION WITH PYTHON ACI
- 
+
+
+Use the command `./network_inventory.py sdn_sandbox_testbed.yaml --aci-address 10.10.20.14 --sdwan-address sandbox-sdwan-2.cisco.com` to run all the solution.
+
+
 ```python
 
 def auth_sdwan(sdwan_address, sdwan_username, sdwan_password):
@@ -147,11 +151,9 @@ def logout_sdwan(sdwan_address, token):
         print(" Error: unable to logout from SD-WAN")
         print(e)
         return False
-
-
 ```
+![image](https://user-images.githubusercontent.com/38144008/225874806-a89723b0-6ab0-4920-a7f2-16da8fb11960.png)
 
-Use the command `./network_inventory.py sdn_sandbox_testbed.yaml --aci-address 10.10.20.14 --sdwan-address sandbox-sdwan-2.cisco.com` to run all the solution.
 
 * Where the final result is a file csv with all detail ACI and SD-WAN devices.
 
