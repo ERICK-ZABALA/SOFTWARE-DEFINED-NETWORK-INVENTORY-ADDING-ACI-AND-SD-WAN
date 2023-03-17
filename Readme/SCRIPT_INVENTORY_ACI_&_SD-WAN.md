@@ -13,9 +13,9 @@ In this section we need to reserve our sandboc for  ACI Simulator Sandbox V5 in 
 
 Check this parameters: Up Time and Firmware.
 
-![image](https://user-images.githubusercontent.com/38144008/225824855-b3383ece-2823-4a4d-9e24-26bc07a9a7df.png)
+![image](https://user-images.githubusercontent.com/38144008/225828556-a58159b3-56b0-40a1-9c58-71c9684c41b4.png)
 
-![image](https://user-images.githubusercontent.com/38144008/225824879-b1e35cde-f2e9-4355-b1c5-fdebbc199d13.png)
+![image](https://user-images.githubusercontent.com/38144008/225828591-dff2634e-8cbd-49e8-b524-788ebe9430f0.png)
 
 + We are going to see our Inspector ACI > help > ACI Inspector 
 
