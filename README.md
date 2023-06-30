@@ -33,6 +33,10 @@ Create a New Script for ACI / SD_WAN
 | SCRIPT INVENTORY ACI & SD-WAN | Script to collect inventory for ACI and SD-WAN | [SCRIPT INVENTORY ACI & SD-WAN](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/SCRIPT_INVENTORY_ACI_%26_SD-WAN.md) | In this section you are going to generate the inventory using python. |
 | SCRIPT TO CREATE A CSV FILE | Script to generate a CSV File | [SCRIPT TO CREATE A CSV FILE](https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/blob/main/Readme/SCRIPT_TO_CREATE_A_CSV_FILE.md) | In this step you are going to dowload the files captured previously via Python. |
 
+# PROOF OF CONCEPT
+
+https://github.com/ERICK-ZABALA/SOFTWARE-DEFINED-NETWORK-INVENTORY-ADDING-ACI-AND-SD-WAN/assets/38144008/92d76204-4a7d-4279-855e-b9e4a6ffea6a
+
 # REFERENCES
 
 * Download in your machine [Summer 2021 Devasc-Prep-Network-Inventory-02](https://github.com/hpreston/summer2021-devasc-prep-network-inventory-02.git) maked by Hank Preston, that is a guide if you need help to develop all the code related how to make an inventory.
